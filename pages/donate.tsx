@@ -25,9 +25,9 @@ function Donation() {
 
   return (
     <div className="flex flex-col items-center pt-[200px] gap-7">
-      <h1 className="text-orange-500 text-[35px] text-center">May be we can't change their lives, maybe we can't take their pain, Maybe we can never feel what they are going through.<br></br> But!!!! <br></br>
+      <h1 className="text-orange-500 text-[35px] text-center">May be we can&apos;t change their lives, maybe we can&apos;t take their pain, Maybe we can never feel what they are going through.<br></br> But!!!! <br></br>
       We can Be a ray of hope in their lives. <br></br> we can be a reason to ease them from their troubles.<br></br> Wr can be a reason for their smile.</h1>
-      <h1 className="text-[34px] text-orange-500">Donation Detail's</h1>
+      <h1 className="text-[34px] text-orange-500">Donation Detail&apos;s</h1>
       <div className="flex">
       <Image src="/donate-image.jpg" width={800} height={500} alt=""/>
       <form onSubmit={handleSubmit} className="flex flex-row gap-6 self-center">

@@ -1,11 +1,11 @@
-import NavBar from "@/components/navBar";
+"use client"
 import React, { useEffect, useState } from "react";
 import { Carousel } from "antd";
 import Image from "next/image";
 import Link from "next/link";
-import ImageTiles from "@/components/ImageTiles";
+import ImageTiles from "../components/ImageTiles";
 
-const contentStyle: React.CSSProperties = {
+const contentStyle = {
   margin: 0,
   height: "670px",
   color: "#fff",
@@ -41,7 +41,7 @@ const images = tiledImages.map((imageUrl, index) => ({
   description: `Description for Image ${index + 1}`,
 }));
 
-function index() {
+function Index() {
   const [isFadeIn, setIsFadeIn] = useState(false);
 
   useEffect(() => {
@@ -68,11 +68,11 @@ function index() {
         {carouselImages.map((imageURL, index) => (
           <div key={index}>
             <Image
-              style={{ ...contentStyle, width: "100%" }}
               src={imageURL}
               alt={`Slide ${index + 1}`}
-              width={1200} // Set the width of the image
-              height={470} // Set the height of the image
+              style={{ ...contentStyle, width: "100%", textAlign: "center" }}
+              width={1200}
+              height={470}
             />
           </div>
         ))}
@@ -233,4 +233,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;

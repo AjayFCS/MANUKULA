@@ -21,8 +21,7 @@ function Footer() {
 
       <div className="w-full flex flex-col items-center">
         <h1 className="text-[40px] text-center text-white italic">
-          "We May Not be able to reduce their pain but could support them to
-          survive"
+          &ldquo; We May Not be able to reduce their pain but could support them to survive &ldquo;
         </h1>
         <Link href="/donate">
           <h1 className="self-center donate-button w-fit bg-white h-fit px-10 py-2 text-[20px] text-orange rounded-md">
