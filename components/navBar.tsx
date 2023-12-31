@@ -26,7 +26,7 @@ function NavBar() {
   return (
     <nav className={`bg-nav-background fixed z-10 w-full flex justify-between px-6 py-5 border border-orange-500 border-b-2 ${isScrolled ? styles.scrolled : ""}`}>
       <div>
-       <a href="/"><Image src="/manukula_logo.jpg" alt="Manukula_Logo" width={200} height={200} /></a>
+       <Link href="/"><Image src="/manukula_logo.jpg" alt="Manukula_Logo" width={200} height={200} /></Link>
       </div>
       <div className="flex justify-between gap-5 self-center h-full text-[22px]">
         <Link href="/AboutUs">
