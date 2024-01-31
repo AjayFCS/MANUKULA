@@ -63,7 +63,7 @@ function Index() {
   };
 
   return (
-    <div className="text-[#192e5b] flex flex-col w-full gap-5">
+    <div className="text-[#192e5b] flex flex-col w-full gap-5 pt-[185px]">
       <Carousel afterChange={onChange} autoplay autoplaySpeed={1900}>
         {carouselImages.map((imageURL, index) => (
           <div key={index}>
