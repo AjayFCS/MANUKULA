@@ -23,7 +23,7 @@ function Footer() {
         <h1 className="text-[40px] text-center text-white italic">
           &ldquo; We May Not be able to reduce their pain but could support them to survive &ldquo;
         </h1>
-        <Link href="/donate">
+        <Link href="https://razorpay.me/@sreemanukulacharitableeducati">
           <h1 className="self-center donate-button w-fit bg-white h-fit px-10 py-2 text-[20px] text-orange rounded-md">
             DONATE NOW
           </h1>

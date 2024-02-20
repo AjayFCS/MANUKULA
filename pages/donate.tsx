@@ -55,7 +55,7 @@ function Donation() {
           onSubmit={handleSubmit}
           className="flex flex-row gap-6 self-center"
         >
-          <div className="flex flex-col gap-10">
+          {/* <div className="flex flex-col gap-10">
             <label>
               Name <span className="text-red-500">*</span>
             </label>
@@ -66,9 +66,9 @@ function Donation() {
               Phone <span className="text-red-500">*</span>
             </label>
             <label>Message</label>
-          </div>
+          </div> */}
           <div className="flex flex-col gap-5">
-          <input
+          {/* <input
             className="rounded-md border border-orange-500 border-3 w-[500px]"
             type="text"
             name="name"
@@ -100,13 +100,14 @@ function Donation() {
             name="message"
             value={formData.message}
             onChange={handleTextAreaChange}
-          ></textarea>
-            <button
+          ></textarea> */}
+            <a
+              href="https://razorpay.me/@sreemanukulacharitableeducati"
               type="submit"
               className="bg-orange-500 rounded-md px-4 py-2 text-white"
             >
-              Checkout to Payment
-            </button>
+              DONATE NOW
+            </a>
           </div>
         </form>
       </div>

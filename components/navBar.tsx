@@ -24,11 +24,12 @@ function NavBar() {
 
 
   return (
-    <nav className={`bg-nav-background fixed z-10 w-full flex justify-between px-6 py-5 border border-orange-500 border-b-2 ${isScrolled ? styles.scrolled : ""}`}>
-      <div>
-       <Link href="/"><Image src="/manukula_logo.jpg" alt="Manukula_Logo" width={200} height={200} /></Link>
+    <nav className={`fixed z-10 w-full flex justify-center items-center py-2  ${isScrolled ? styles.scrolled : ""}`}>
+      <div className="container w-full items-center justify-between">
+      <div className="">
+       <Link href="/"><Image src="/manukula_logo.jpg" alt="Manukula_Logo" style={{width:'50px'}} width={100} height={100} /></Link>
       </div>
-      <div className="flex justify-between gap-5 self-center h-full text-[22px]">
+      <div className="flex gap-[50px] h-full text-[15px]">
         <Link href="/AboutUs">
           <p className="nav-link">ABOUT US</p>
         </Link>
@@ -46,11 +47,12 @@ function NavBar() {
         </Link> */}
       </div>
       <div className="ml-[20px] h-full self-center">
-        <Link href="/donate">
+        <Link href="https://razorpay.me/@sreemanukulacharitableeducati">
           <h1 className="donate-button bg-orange-500 h-full px-10 py-2 flex items-center justify-center text-[20px] text-white rounded-md">
             DONATE
           </h1>
         </Link>
+      </div>
       </div>
 
       <style jsx>{`
