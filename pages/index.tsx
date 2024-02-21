@@ -4,6 +4,7 @@ import { Carousel } from "antd";
 import Image from "next/image";
 import Link from "next/link";
 import ImageTiles from "../components/ImageTiles";
+//@ts-ignore
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import '@splidejs/react-splide/css';
 const contentStyle = {
@@ -67,7 +68,7 @@ function Index() {
     <div className="text-[#192e5b] flex flex-col w-full gap-5 pt-[185px]">
       <Splide options={ {autoplay:true, interval:2000 } } aria-label="My Favorite Images">
         {carouselImages.map((imageURL, index) => (
-          <SplideSlide >
+          <SplideSlide key={index}>
               <img
                 src={imageURL}
                 alt={`Slide ${index + 1}`}
