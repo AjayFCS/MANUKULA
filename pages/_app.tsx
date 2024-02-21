@@ -5,7 +5,7 @@ import NavBar from "@/components/navBar";
 import Footer from "@/components/footer";
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div>
+    <div className="">
       <NavBar /> <Component {...pageProps} />
       <Footer />
     </div>

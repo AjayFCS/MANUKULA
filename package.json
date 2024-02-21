@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@ant-design/cssinjs": "^1.18.2",
+    "@splidejs/react-splide": "^0.7.12",
     "@tailwindcss/forms": "^0.5.7",
     "antd": "^5.12.6",
     "next": "^14.0.4",

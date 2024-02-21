@@ -1,10 +1,11 @@
-"use client"
+"use client";
 import React, { useEffect, useState } from "react";
 import { Carousel } from "antd";
 import Image from "next/image";
 import Link from "next/link";
 import ImageTiles from "../components/ImageTiles";
-
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import '@splidejs/react-splide/css';
 const contentStyle = {
   margin: 0,
   height: "670px",
@@ -64,19 +65,17 @@ function Index() {
 
   return (
     <div className="text-[#192e5b] flex flex-col w-full gap-5 pt-[185px]">
-      <Carousel afterChange={onChange} autoplay autoplaySpeed={1900}>
+      <Splide options={ {autoplay:true, interval:2000 } } aria-label="My Favorite Images">
         {carouselImages.map((imageURL, index) => (
-          <div key={index}>
-            <Image
-              src={imageURL}
-              alt={`Slide ${index + 1}`}
-              style={{ ...contentStyle, width: "100%", textAlign: "center" }}
-              width={1200}
-              height={470}
-            />
-          </div>
+          <SplideSlide >
+              <img
+                src={imageURL}
+                alt={`Slide ${index + 1}`}
+                style={{ ...contentStyle, width: "100%", textAlign: "center" }}
+              />
+          </SplideSlide>
         ))}
-      </Carousel>
+      </Splide>
 
       <section className="px-[100px] ml-[50px] flex flex-row gap-[40px]">
         <div className="border border-orange-100 rounded-md text-left py-5 max-w-[50%] px-[50px]">
