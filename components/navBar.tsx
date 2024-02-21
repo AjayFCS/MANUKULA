@@ -24,7 +24,7 @@ function NavBar() {
 
 
   return (
-    <nav className={`fixed z-10 w-full flex justify-center items-center py-2  ${isScrolled ? styles.scrolled : ""}`}>
+    <nav className={`sticky top-0 z-10 w-full flex justify-center items-center py-2  ${isScrolled ? styles.scrolled : ""}`}>
       <div className="container w-full items-center justify-between">
       <div className="">
        <Link href="/"><Image src="/manukula_logo.jpg" alt="Manukula_Logo" style={{width:'50px'}} width={100} height={100} /></Link>

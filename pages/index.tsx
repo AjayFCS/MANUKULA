@@ -65,7 +65,7 @@ function Index() {
   };
 
   return (
-    <div className="text-[#192e5b] flex flex-col w-full gap-5 pt-[185px]">
+    <div className="text-[#192e5b] flex flex-col w-full gap-5">
       <Splide options={ {autoplay:true, interval:2000 } } aria-label="My Favorite Images">
         {carouselImages.map((imageURL, index) => (
           <SplideSlide key={index}>
